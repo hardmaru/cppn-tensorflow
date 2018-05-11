@@ -56,7 +56,7 @@ class CPPN():
   def init(self):
 
     # Initializing the tensor flow variables
-    init = tf.initialize_all_variables()
+    init = tf.global_variables_initializer()
     # Launch the session
     self.sess = tf.Session()
     self.sess.run(init)
